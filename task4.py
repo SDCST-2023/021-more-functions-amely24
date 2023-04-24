@@ -11,8 +11,13 @@ note: Area of a circle is given by A = pi*(square of the radius)
 You may want to use the math module to complete this problem
 """
 
-def area():
-    return
+import math
+
+def area(radius):
+    if radius < 0:
+        return None
+    else:
+        return round(math.pi * radius**2, 2)
 
 
 assert round(area(2),2) == 12.57
